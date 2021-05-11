@@ -1,6 +1,6 @@
 const closeBtn = document.querySelectorAll('.fa-times'),
-    card = document.querySelectorAll('.card'),
-    btnAction = document.querySelectorAll('.btn');
+    card = document.querySelectorAll('.card');
+    //btnAction = document.querySelectorAll('.btn');//TODO: is this needed????
 
     const closeCard = (event)=>{
         //console.log("I'm here")
@@ -19,6 +19,6 @@ const closeBtn = document.querySelectorAll('.fa-times'),
     card.forEach((el)=>{
         el.addEventListener('click', openCard)
     });
-    btnAction.forEach((el)=>{
-        el.addEventListener('click', clickBtn)
-    });
+    // btnAction.forEach((el)=>{//TODO: same here, is it needed???
+    //     el.addEventListener('click', clickBtn)
+    // });
