@@ -3,7 +3,7 @@ const closeBtn = document.querySelectorAll('.fa-times'),
     btnAction = document.querySelectorAll('.btn');
 
     const closeCard = (event)=>{
-        console.log("I'm here")
+        //console.log("I'm here")
         event.stopPropagation();
         event.target.closest('.card').classList.add("closed");
     };
@@ -17,8 +17,8 @@ const closeBtn = document.querySelectorAll('.fa-times'),
         el.addEventListener('click',closeCard);
     });
     card.forEach((el)=>{
-        el.addEventListener('click', openCard())
+        el.addEventListener('click', openCard)
     });
     btnAction.forEach((el)=>{
-        el.addEventListener('click', clickBtn())
+        el.addEventListener('click', clickBtn)
     });
